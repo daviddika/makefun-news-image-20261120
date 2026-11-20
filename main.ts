@@ -8,6 +8,7 @@
 // Nvidia probe, Van Gogh sale, Anthropic's debut week, Senegal boat sinking).
 // The program copies it to /output/entry.png (or $MAKEFUN_OUTPUT_DIR when set).
 // Deterministic, no network: it writes the same bytes on every run.
+// The output filename is always entry.png, whatever the output directory.
 // Nothing is read except entry.png beside this file; nothing is fetched.
 
 import { copyFileSync, mkdirSync } from 'node:fs';
